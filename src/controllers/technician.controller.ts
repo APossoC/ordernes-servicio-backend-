@@ -16,18 +16,16 @@ export default {
                     ok: false,
                     msg: 'technicianDni already taken'
                 });
+            } else {
+                //Guardar Technician             
+                const costumerModel = await models.Technician.create({ ...req.body });
+                await costumerModel.save();
+                //Response
+                return res.json({
+                    ok: true,
+                    technicianCreated: costumerModel
+                });
             }
-
-            //Guardar Technician            
-            const costumerModel = await models.Technician.create({ ...req.body });
-            await costumerModel.save();
-
-            //Response
-            return res.json({
-                ok: true,
-                technicianCreated: costumerModel
-            });
-
         }
         catch (error) {
             console.log(error);

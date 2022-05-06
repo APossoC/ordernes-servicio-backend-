@@ -17,17 +17,18 @@ export default {
                     ok: false,
                     msg: 'customerDni already taken'
                 });
+            } else {
+
+                //Guardar Customer            
+                const customerModel = await models.Customer.create({ ...req.body });
+                await customerModel.save();
+
+                //Response
+                return res.json({
+                    ok: true,
+                    customerCreated: customerModel
+                });
             }
-
-            //Guardar Customer            
-            const customerModel = await models.Customer.create({...req.body});
-            await customerModel.save();
-
-            //Response
-            return res.json({
-                ok: true,
-                customerCreated: customerModel
-            });
 
         }
         catch (error) {
@@ -39,7 +40,7 @@ export default {
         }
 
     },
-    customerList: async (_: Request,res: Response) => {
+    customerList: async (_: Request, res: Response) => {
         try {
             //Objetos de negocio y listar
             const [customerModel, totalRecords] = await Promise.all([

@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import models from "../models/index.js";
 
 export default {
-    serviceCreate: async (req:Request, res:Response) => {
+    serviceCreate: async (req: Request, res: Response) => {
         try {
             //Objetos de negocio            
             const serviceExists = await models.Service.findOne({
@@ -15,17 +15,18 @@ export default {
                     ok: false,
                     msg: 'ServiceName already taken'
                 });
+            } else {
+
+                //Guardar Service
+                const serviceModel = await models.Service.create({ ...req.body });
+                await serviceModel.save();
+
+                //Response
+                return res.json({
+                    ok: true,
+                    serviceCreated: serviceModel
+                });
             }
-
-            //Guardar Service
-            const serviceModel = await models.Service.create({ ...req.body });
-            await serviceModel.save();
-
-            //Response
-            return res.json({
-                ok: true,
-                serviceCreated: serviceModel
-            });
 
         }
         catch (error) {
@@ -37,14 +38,14 @@ export default {
         }
 
     },
-    serviceList: async (_: Request,res:Response) => {
+    serviceList: async (_: Request, res: Response) => {
         try {
-             //Objetos de negocio y listar
+            //Objetos de negocio y listar
             const [serviceModel, totalRecords] = await Promise.all([
                 models.Service.findAll(),
                 models.Service.count()
             ]);
-             //Response
+            //Response
             res.json({
                 ok: true,
                 totalRecords,

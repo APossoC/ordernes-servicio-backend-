@@ -1,0 +1,16 @@
+//GIT
+git add .
+git commit -m "Proyecto Ordenes de Servicio"
+git push -u origin main
+
+//DOCKER
+docker build -t ordenes-servicios-backend .
+docker run -it -p 4000:3000  ordenes-servicios-backend
+    -- DELETE IMAGES
+    docker rmi -f $(docker images -aq)
+
+//HEROKU SERVER CONTAINER
+heroku container:login > Success
+heroku create > guarded-earth-58980
+heroku container:push web -a guarded-earth-58980 > Success
+heroku container:release web -a guarded-earth-58980 > Success
