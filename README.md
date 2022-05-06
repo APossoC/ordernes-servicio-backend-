@@ -9,7 +9,7 @@
 
   Implementacion de SequelizeORM
 
-## Motor base de datos heroku-postgresql-clear-62011: 
+## Motor base de datos Serverless heroku-postgresql-clear-62011: 
 
   Implementacion de PostgresSQL
   
