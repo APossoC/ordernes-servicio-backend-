@@ -7,7 +7,7 @@ export const options = {
         },
         servers:[
             {
-                url: "http://guarded-earth-58980.herokuapp.com/dev"
+                url: "https://guarded-earth-58980.herokuapp.com/dev"
             }
         ]
     },

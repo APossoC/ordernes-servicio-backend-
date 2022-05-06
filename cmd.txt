@@ -11,6 +11,6 @@ docker run -it -p 4000:3000  ordenes-servicios-backend
 
 //HEROKU SERVER CONTAINER
 heroku container:login > Success
-heroku create > guarded-earth-58980
+heroku create > created: guarded-earth-58980
 heroku container:push web -a guarded-earth-58980 > Success
 heroku container:release web -a guarded-earth-58980 > Success
