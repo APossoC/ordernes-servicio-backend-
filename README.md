@@ -16,7 +16,7 @@
   ![image](https://user-images.githubusercontent.com/11216709/167219763-75cd9008-3e78-4c7b-b1fd-23478d14de6f.png)
 
 
-## API REST documentacion en Swagger: http://[hostName]:3000/api-docs/
+## API REST documentacion en Swagger: https://guarded-earth-58980.herokuapp.com/api-docs/
 
   ![image](https://user-images.githubusercontent.com/11216709/167196747-46bff82f-cc3f-465e-b521-3a9715318137.png)
 
