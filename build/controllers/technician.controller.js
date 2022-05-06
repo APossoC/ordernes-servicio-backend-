@@ -28,14 +28,16 @@ exports.default = {
                     msg: 'technicianDni already taken'
                 });
             }
-            //Guardar Technician            
-            const costumerModel = yield index_js_1.default.Technician.create(Object.assign({}, req.body));
-            yield costumerModel.save();
-            //Response
-            return res.json({
-                ok: true,
-                technicianCreated: costumerModel
-            });
+            else {
+                //Guardar Technician             
+                const costumerModel = yield index_js_1.default.Technician.create(Object.assign({}, req.body));
+                yield costumerModel.save();
+                //Response
+                return res.json({
+                    ok: true,
+                    technicianCreated: costumerModel
+                });
+            }
         }
         catch (error) {
             console.log(error);
