@@ -9,9 +9,12 @@
 
   Implementacion de SequelizeORM
 
-## Motor base de datos: 
+## Motor base de datos heroku-postgresql-clear-62011: 
 
   Implementacion de PostgresSQL
+  
+  ![image](https://user-images.githubusercontent.com/11216709/167219763-75cd9008-3e78-4c7b-b1fd-23478d14de6f.png)
+
 
 ## API REST documentacion en Swagger: http://[hostName]:3000/api-docs/
 
@@ -22,3 +25,11 @@
   Librerias usadas dentro del package.json: 
   
   ![image](https://user-images.githubusercontent.com/11216709/167197297-9535e93f-5acf-455e-80f8-2f8e1099568a.png)
+  
+## Virtualizacion Docker :  
+  
+  ![image](https://user-images.githubusercontent.com/11216709/167219354-0befb5ac-4007-4ba1-b8d9-e77ec7dff69c.png)
+
+## Deploy Serverless Heroku orientados a Microservicios :  
+
+  ![image](https://user-images.githubusercontent.com/11216709/167219619-85aad15b-2779-4d02-aeee-6a4c77794269.png)
