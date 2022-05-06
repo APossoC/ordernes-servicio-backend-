@@ -1,7 +1,7 @@
 # ordernes-servicio-backend
 ### ApiRest NodeJs, Typescript,Sequelize,Postgres
 
-## Patro de diseño y Estructura de directorios:
+## Patron de diseño y Estructura de directorios:
 
   ![image](https://user-images.githubusercontent.com/11216709/167197943-610cad68-7d5b-4c2f-b151-1630ba3e5122.png)
 
