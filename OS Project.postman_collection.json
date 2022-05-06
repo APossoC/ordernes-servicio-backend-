@@ -14,11 +14,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/dev/customer/list",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/customer/list",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"customer",
@@ -35,7 +37,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CustomerName\":\"Cliente111\",\r\n    \"CustomerDni\": \"111111111\"\r\n}",
+							"raw": "{\r\n    \"CustomerName\":\"Cliente112\",\r\n    \"CustomerDni\": \"1111111112\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,11 +45,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/dev/customer/create",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/customer/create",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"customer",
@@ -72,11 +76,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/dev/service_queue/create",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/service_queue/create",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"service_queue",
@@ -97,11 +103,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/dev/service/list",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/service/list",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"service",
@@ -126,11 +134,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/dev/service/create",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/service/create",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"service",
@@ -151,11 +161,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/dev/technician/list",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/technician/list",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"technician",
@@ -180,11 +192,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/dev/technician/create",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/technician/create",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"technician",
@@ -200,11 +214,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/dev/service_queue/find/3",
+							"raw": "http://guarded-earth-58980.herokuapp.com/dev/service_queue/find/3",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"guarded-earth-58980",
+								"herokuapp",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"dev",
 								"service_queue",
