@@ -10,7 +10,7 @@ exports.options = {
         },
         servers: [
             {
-                url: "http://localhost:3000/dev"
+                url: "https://guarded-earth-58980.herokuapp.com/dev"
             }
         ]
     },

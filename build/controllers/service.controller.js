@@ -27,14 +27,16 @@ exports.default = {
                     msg: 'ServiceName already taken'
                 });
             }
-            //Guardar Service
-            const serviceModel = yield index_js_1.default.Service.create(Object.assign({}, req.body));
-            yield serviceModel.save();
-            //Response
-            return res.json({
-                ok: true,
-                serviceCreated: serviceModel
-            });
+            else {
+                //Guardar Service
+                const serviceModel = yield index_js_1.default.Service.create(Object.assign({}, req.body));
+                yield serviceModel.save();
+                //Response
+                return res.json({
+                    ok: true,
+                    serviceCreated: serviceModel
+                });
+            }
         }
         catch (error) {
             console.log(error);

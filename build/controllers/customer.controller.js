@@ -27,14 +27,16 @@ exports.default = {
                     msg: 'customerDni already taken'
                 });
             }
-            //Guardar Customer            
-            const customerModel = yield index_js_1.default.Customer.create(Object.assign({}, req.body));
-            yield customerModel.save();
-            //Response
-            return res.json({
-                ok: true,
-                customerCreated: customerModel
-            });
+            else {
+                //Guardar Customer            
+                const customerModel = yield index_js_1.default.Customer.create(Object.assign({}, req.body));
+                yield customerModel.save();
+                //Response
+                return res.json({
+                    ok: true,
+                    customerCreated: customerModel
+                });
+            }
         }
         catch (error) {
             console.log(error);
